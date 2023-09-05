@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
+    <title>Bullseye!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
+    <!-- added font Barriecito -->
+</head>
+
+<body>
+    <button id="showTutorialButton">ShowTutorial</button>
+    <div class="wrapper">
+        <div id="game">
+            <canvas id="gameCanvas"></canvas>
+            <img id="overlay" src="assets/images/overlay.png" alt="overlay">
+            <img id="obstacles" src="assets/images/obstacles.png" alt="obstacles">
+            <img id="bull" src="assets/images/bull.png" alt="bull">
+            <img id="egg" src="assets/images/egg.png" alt="egg">
+            <img id="toad" src="assets/images/toad.png" alt="toad">
+            <img id="toads" src="assets/images/toads.png" alt="toads">
+            <img id="larva" src="assets/images/larva.png" alt="larva">
+        </div>
+
+        <div id="tutorial">
+            <button id="playButton">Play Audio</button>
+            <h2>Game Tutorial</h2>
+            <p>Welcome to the best game you've ever played, Bullseye! If you want to be the best, read the instructions
+                below:</p>
+            <ol>
+                <li>Use your mouse's left click button to move the bullseye (player).</li>
+                <li>Move against an egg by positioning yourself opposite of the direction you want to go.</li>
+                <li>Collect 5 eggs to win the game.</li>
+                <li>Avoiding enemies and obstacles will help you win faster!</li>
+                <li>If you lose too many hatchlings, the game is over!</li>
+                <li>Press 'R' to restart the game at any time. (Don't restart if you're not doing well, that's just sad)
+                </li>
+                <li>Keep your eye on the bull!</li>
+            </ol>
+            <button id="closeTutorialButton">Close Tutorial</button>
+        </div>
+    </div>
+    <script src="js/Player.js"></script>
+    <script src="js/Obstacle.js"></script>
+    <script src="js/Egg.js"></script>
+    <script src="js/Enemy.js"></script>
+    <script src="js/Larva.js"></script>
+    <script src="js/Particle.js"></script>
+    <script src="js/Firefly.js"></script>
+    <script src="js/Spark.js"></script>
+    <script src="js/Game.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
